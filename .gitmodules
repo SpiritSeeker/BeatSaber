@@ -1,0 +1,3 @@
+[submodule "AncoraEngine"]
+	path = AncoraEngine
+	url = git@github.com:SpiritSeeker/AncoraEngine.git
