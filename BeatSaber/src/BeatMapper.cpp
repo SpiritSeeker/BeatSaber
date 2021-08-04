@@ -1,7 +1,5 @@
 #include "BeatMapper.h"
 
-#include <fstream>
-
 BeatMapper::BeatMapper(const std::string& filepath)
 {
   m_BeatData = BeatData();

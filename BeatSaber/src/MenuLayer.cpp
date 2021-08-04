@@ -25,7 +25,7 @@ void MenuLayer::OnUpdate(Ancora::Timestep ts)
   if (m_Level.IsGameOver())
     m_State = GameState::GameOver;
 
-  m_Camera->SetView({ 0.0f, 2.0f, 10.0f });
+  m_Camera->SetView({ 0.0f, 2.0f, 0.0f }, { 0.0f, 1.0f, -10.0f });
 
   switch (m_State)
   {

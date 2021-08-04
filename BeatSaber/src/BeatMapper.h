@@ -1,7 +1,6 @@
 #pragma once
 
 #include <Ancora.h>
-#include <filesystem>
 #include "BeatMap.h"
 
 enum class Difficulty {

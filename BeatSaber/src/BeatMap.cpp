@@ -1,7 +1,5 @@
 #include "BeatMap.h"
 
-#include <fstream>
-
 BeatMap::BeatMap(const std::string& filepath)
 {
   std::string source = ReadFile(filepath);
