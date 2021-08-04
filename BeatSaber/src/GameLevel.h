@@ -2,6 +2,8 @@
 
 #include <Ancora.h>
 
+#include "BeatMapper.h"
+
 class GameLevel
 {
 public:
@@ -15,13 +17,15 @@ public:
 
   void UpdateCamera(const Ancora::Ref<Ancora::PerspectiveCamera>& camera) { m_SceneData.Camera = camera; }
 private:
+  Ancora::Ref<BeatMapper> m_Mapper;
+  Ancora::Ref<BeatMap> m_Map;
+
+
 	Ancora::Ref<Ancora::Model3D> m_RedBox;
 	Ancora::Ref<Ancora::Model3D> m_BlueBox;
 	float m_Red = -20.0f;
 	float m_Blue = -20.0f;
-	float m_Speed = 10.0f;
-
-  Ancora::Ref<Ancora::CubeMap> m_CubeMap;
+	float m_Speed;
 
   Ancora::Renderer3DSceneData m_SceneData;
 

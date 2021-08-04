@@ -13,6 +13,9 @@ void GameLevel::Init()
 		AE_ERROR("Only Linux and Windows supported!");
 	#endif
 
+	m_Mapper = Ancora::CreateRef<BeatMapper>("assets/beatmaps/Legends Never Die");
+	m_Map = m_Mapper->GetBeatMap(Difficulty::ExpertPlus);
+
   m_SceneData.DirLight = Ancora::Light::CreateDirectionalLight(glm::vec3(0.0f, -1.0f, -2.0f));
 }
 
