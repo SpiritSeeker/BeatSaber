@@ -16,5 +16,5 @@ public:
 
 Ancora::Application* Ancora::CreateApplication()
 {
-	return new Sandbox();
+	return new BeatSaber();
 }

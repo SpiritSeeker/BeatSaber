@@ -49,14 +49,14 @@ project "BeatSaber"
 		"AncoraEngine/Ancora/vendor/spdlog/include",
 		"AncoraEngine/Ancora/src",
 		"BeatSaber/src",
-		"%{IncludeDir.glm}",
-		"%{IncludeDir.ImGui}",
-		"%{IncludeDir.assimp}"
+		"AncoraEngine/%{IncludeDir.glm}",
+		"AncoraEngine/%{IncludeDir.ImGui}",
+		"AncoraEngine/%{IncludeDir.assimp}"
 	}
 
 	links
 	{
-		"Ancora",
+		"AncoraEngine",
 		"assimp"
 	}
 
